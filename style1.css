@@ -1,0 +1,111 @@
+body{
+
+}
+.Nappula{
+  background-color:#000;
+  color: #ffffff;
+  padding: 0px;
+  border: none;
+  text-decoration: none;
+
+}
+.Nappula:hover{
+  background-color:#ff0000;
+  color:#ffffff;
+}
+.Nappula:active{
+  color:#ffffff;
+}
+.Nappula{
+  postion: fixed
+  top: 100px;
+  left: 250px;
+}
+.asemointi{
+  position: fixed;
+  top: 100px;
+  left: 250px;
+}
+.linkkilista ul{
+    list-style-type: none;
+    color: #ffffff
+}
+.linkkilista:active{
+  color: #ffffff
+}
+.linkkilista li{
+  border-bottom: dashed 1px white;
+}
+.linkkilista{
+  color:#ffffff;
+}
+.opinnot{
+  border-style: solid;
+  border-color: #000;
+  border-radius: 10px;
+}
+.linkkilista{
+  color:#ffffff;
+  background-color: transparent;
+  text-decoration: none;
+}
+.tyokokemus {
+  position: relative;
+  text-align: center;
+  color: #ce18bf;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 250px;
+  left: 16px;
+}
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+.bottom-right {
+  position: absolute;
+  bottom: 250px;
+  right: 16px;
+}
+.bottom-right2 {
+  position: absolute;
+  bottom: 220px;
+  right: 16px;
+}
+.bottom-left2 {
+  position: absolute;
+  bottom: 220px;
+  left: 16px;
+}
+.painike{
+  background-color:#000;
+  color: #ffffff;
+  padding: 0px;
+  border: none;
+  text-decoration: none;
+}
+.painike{
+  position: fixed;
+  top: 100px;
+  left: 250px;
+}
+.painike{
+padding: 10px;
+}
+.alue{
+  background-color: rgb(11, 195, 228);
+  color:rgb(194, 24, 24);
+}
+.laatikko{
+  float: left;
+  width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 25px;
