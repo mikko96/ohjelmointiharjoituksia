@@ -1,5 +1,5 @@
 body{
-
+background-color: #999999;
 }
 .Nappula{
   background-color:#000;
@@ -104,6 +104,7 @@ padding: 10px;
   color:rgb(194, 24, 24);
   width: 70%;
   margin: auto;
+  border-style: double;
 }
 .laatikko{
   float: left;
@@ -111,11 +112,12 @@ padding: 10px;
   padding: 10px;
   box-sizing: border-box;
   margin-top: 25px;
+}
 
 .yhteydenotto label{
   display: block;
 }
-.yhteydenotto input[type="text"], .yhteydenotto textarea{
+.yhteydenotto input[type="text"], .yhteydenotto textarea, input[type="email"], input[type="number"], input[type="date"]{
   padding: 10px;
-  width: 70%;
+  width: 97%;
 
