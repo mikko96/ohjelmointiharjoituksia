@@ -102,6 +102,8 @@ padding: 10px;
 .alue{
   background-color: rgb(11, 195, 228);
   color:rgb(194, 24, 24);
+  width: 70%;
+  margin: auto;
 }
 .laatikko{
   float: left;
@@ -109,3 +111,11 @@ padding: 10px;
   padding: 10px;
   box-sizing: border-box;
   margin-top: 25px;
+
+.yhteydenotto label{
+  display: block;
+}
+.yhteydenotto input[type="text"], .yhteydenotto textarea{
+  padding: 10px;
+  width: 70%;
+
