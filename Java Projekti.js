@@ -1,5 +1,5 @@
-function perheenIät(ekanumero,tokanumero,kolmasnumero,neljäsnumero){
-  return (ekanumero + tokanumero + kolmasnumero + neljäsnumero)
+function perheenIat(ekanumero,tokanumero,kolmasnumero,neljasnumero){
+  return (ekanumero + tokanumero + kolmasnumero + neljasnumero)
 }
 
 const etunimi='Mikko'; 
@@ -71,4 +71,4 @@ console.log(perheobjekti);
 
 console.log(perheobjekti2);
 
-console.log(perheenIät(52,26,27,7));
+console.log(perheenIat(52,26,27,7));
