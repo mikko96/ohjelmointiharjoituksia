@@ -72,3 +72,6 @@ console.log(perheobjekti);
 console.log(perheobjekti2);
 
 console.log(perheenIat(52,26,27,7));
+
+
+/////////////////////////////////////////////////////////////////////////////////

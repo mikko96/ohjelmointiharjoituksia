@@ -159,7 +159,7 @@ const virhe = document.querySelector('.virheilmoitus');
 const viesti = document.querySelector('#tiedot');
 
 kurssinappi.addEventListener('click', e =>{
-
+  e.preventDefault();
 
   if(nimiSisalto.value === '' || asiaSisalto.value === ''){
       
@@ -167,7 +167,8 @@ kurssinappi.addEventListener('click', e =>{
       virhe.innerHTML = 'Täytä kaikki kentät';
       kurssinappi.style.background = 'red';
       kurssinappi.value = 'Virhe! En lisännyt tietoa.';
-      setTimeout(() => virhe.remove(), 3000);
+      setTimeout(() => virhe.classList.remove('virhe'), 3000);
+      setTimeout(()=> virhe.innerHTML, 3000);
       setTimeout(() => kurssinappi.style.background ='rgb(51,44,44)', 3000);
       setTimeout(() => kurssinappi.value = 'Lisää tieto', 3000);
   }else{
@@ -210,3 +211,7 @@ merkitseValmiit.addEventListener('click', e => {
     ul.children[3].innerHTML = '<input type="checkbox" id="tehtd">CI/CD';
   }
 });
+
+/////////////////////////////////////////////////////////////////////////////////
+
+

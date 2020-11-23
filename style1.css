@@ -120,4 +120,6 @@ padding: 10px;
 .yhteydenotto input[type="text"], .yhteydenotto textarea, input[type="email"], input[type="number"], input[type="date"]{
   padding: 10px;
   width: 97%;
+}
+
 
