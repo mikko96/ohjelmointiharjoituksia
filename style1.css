@@ -122,4 +122,25 @@ padding: 10px;
   width: 97%;
 }
 
+.Vaalea{
+  background-color:rgb(231, 231, 231);
+  color: #0c0a0a;
+  padding: 0px;
+  border: none;
+  text-decoration: none;
+}
 
+.Tumma{
+  background-color:rgb(19, 7, 7);
+  color: #dddddd;
+  padding: 0px;
+  border: none;
+  text-decoration: none;
+}
+.Sateenkaari{
+  background-color:rgb(172, 9, 9);
+  color: #9202ca;
+  padding: 0px;
+  border: none;
+  text-decoration: none;
+}
