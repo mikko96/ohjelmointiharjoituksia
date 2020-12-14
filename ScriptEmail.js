@@ -9,7 +9,7 @@ sendJSON();
 
 function sendJSON(){
   let xhr = new XMLHttpRequest();
-  let url = "https://salpausemail.azurewebsites.net/api/HttpTriggerCSharp1?code=lWOELqiU07AqsBviOQYzuNIrQP7xoV7NV7C5W2ctgjIRcf7nXE2biw==";
+  let url = "https://salpausemail.azurewebsites.net/api/HttpTriggerCSharp2?code=PnWhScmEcspN8Fy7eYKnIZA37AFgUZ0fMQ1OpXOJ6dtBPBGNXAMIqQ==";
 
   xhr.open("POST", url, true);
 
@@ -20,11 +20,15 @@ function sendJSON(){
       console.log("valmis, yhteys toimii");
     }
   };
+  const nimi = document.querySelector('#nimi').value;
+  const email = document.querySelector('#email').value:
+  console.log("nimikentän sisältö: " + nimi);
+  const viesti = document.querySelector('#viesti').value;
+  console.log("viestikentän sisältö: " + viesti);
   var data = JSON.stringify({
     "EmailMsg": "Tähän tulee postin sisältö",  //kirjoittaa sähköpostin sisällön
-    "EmailAddress": "mira.vorne@salpaus.fi",   //viestin kirjoittajan sähköposti
-    "EmailTo": "mikko.ammalahti@edu.salpaus.fi", //oma sähköposti
-    "EmailName": "Tyyppi" //Nimi kentän sisältö
+    "EmailTo": "mikko.ammalahti", //oma sähköposti
+    "EmailName": nimi+" "+email //Nimi kentän sisältö
   });
   xhr.send(data);
 }
