@@ -24,5 +24,8 @@ getJSON('https://api.apify.com/v2/key-value-stores/jEFt5tgCTMfjJpLD3/records/LAT
         console.error(err);
     } else {
         console.log(`${data.infected}`);
+        console.log(`${data.tested}`);
+        console.log(`${data.deaths}`);
+        console.log(`${data.lastUpdatedAtApify}`);
     }  
 });
