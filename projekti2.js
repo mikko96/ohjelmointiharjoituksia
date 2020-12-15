@@ -44,15 +44,16 @@ function sendJSON(){
       console.log("valmis, yhteys toimii");
     }
   };
-  const nimi = document.querySelector('#nimi').value;
-  const email = document.querySelector('#email').value:
+  const nimi = document.querySelector('#etunimi').value;
+  const sukunimi = document.querySelector('#sukunimi').value;
+  const email = document.querySelector('#email').value;
   console.log("nimikentän sisältö: " + nimi);
   const viesti = document.querySelector('#viesti').value;
   console.log("viestikentän sisältö: " + viesti);
   var data = JSON.stringify({
-    "EmailMsg": "Tähän tulee postin sisältö",  //kirjoittaa sähköpostin sisällön
+    "EmailMsg": viesti,  //kirjoittaa sähköpostin sisällön
     "EmailTo": "mikko.ammalahti", //oma sähköposti
-    "EmailName": nimi+" "+email //Nimi kentän sisältö
+    "EmailName": nimi //Nimi kentän sisältö
   });
   xhr.send(data);
 }
