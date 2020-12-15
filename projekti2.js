@@ -3,6 +3,7 @@ const sukunimi = document.querySelector('.sukunimi');
 const email = document.querySelector('.email');
 const laheta = document.querySelector('.laheta');
 const virhe = document.querySelector('.virheilmoitus')
+const ilmoitus = document.querySelector('.ilmoitus')
 
 laheta.addEventListener('click', e =>{
   e.preventDefault();
@@ -23,14 +24,35 @@ if(etunimi.value === '' || sukunimi.value === '' || email.value === ''){
   setTimeout(() => sukunimi.style.border = '1px solid black', 3000);
   setTimeout(() => email.style.border = '1px solid black', 3000);
 }else{
-
-  //  const li = document.createElement('li');
-
-  //  li.appendChild(document.createTextNode(`${etunimi.value} : ${sukunimi.value} `));
-
-  //  viesti.appendChild(li);
-
+sendJSON();
+ilmoitus.innerHTML = 'Lomake lähetetty, kiitos viestistäsi '+etunimi.value;
   //  etunimi.value = '';
   //  sukunimi.value = '';
   }
 });
+
+function sendJSON(){
+  let xhr = new XMLHttpRequest();
+  let url = "https://salpausemail.azurewebsites.net/api/HttpTriggerCSharp2?code=PnWhScmEcspN8Fy7eYKnIZA37AFgUZ0fMQ1OpXOJ6dtBPBGNXAMIqQ==";
+
+  xhr.open("POST", url, true);
+
+  xhr.setRequestHeader("Content-type", "application/json");
+
+  xhr.onreadystatechange = function(){
+    if(xhr.readyState === 4 && xhr.status === 200){
+      console.log("valmis, yhteys toimii");
+    }
+  };
+  const nimi = document.querySelector('#nimi').value;
+  const email = document.querySelector('#email').value:
+  console.log("nimikentän sisältö: " + nimi);
+  const viesti = document.querySelector('#viesti').value;
+  console.log("viestikentän sisältö: " + viesti);
+  var data = JSON.stringify({
+    "EmailMsg": "Tähän tulee postin sisältö",  //kirjoittaa sähköpostin sisällön
+    "EmailTo": "mikko.ammalahti", //oma sähköposti
+    "EmailName": nimi+" "+email //Nimi kentän sisältö
+  });
+  xhr.send(data);
+}
