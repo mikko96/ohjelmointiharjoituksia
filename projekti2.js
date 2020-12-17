@@ -52,7 +52,7 @@ function sendJSON(){
   console.log("viestikentän sisältö: " + viesti);
   var data = JSON.stringify({
     "EmailMsg": viesti,  //kirjoittaa sähköpostin sisällön
-    "EmailTo": "mira.vorne", //oma sähköposti
+    "EmailTo": "mikko.ammalahti", //oma sähköposti
     "EmailName": nimi //Nimi kentän sisältö
   });
   xhr.send(data);
